@@ -1,0 +1,22 @@
+.container{
+	height: 100%;
+	width: 100%;
+}
+
+.sbContent1{
+	margin: 10px;
+	background-color: silver;
+	min-height: 20%;
+}
+
+.sbContent2{
+	margin: 10px;
+	background-color: silver;
+	min-height: 80%;
+}
+
+.mContent{
+	margin: 10px;
+	background-color: silver;
+	min-height: 350px;
+}

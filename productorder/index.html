@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>Shop</title>
+
+</head>
+<body>
+
+<div class="container-fluid" align="center" >
+	<form id="cartForm" class="form-inline " method="post">
+
+		<div class="form-group">
+			<label for="inputName" class="control-label col-md-1 offset-md-2">Product ID</label>
+			<div class="col-md-2">
+				<select id="select-product" class="custom-select custom-select-sm my-1 mr-sm-2" name="select-product">
+			</select>
+			</div>			
+		</div>
+		
+		<br>	
+				
+
+		<div class="form-group">
+			<label for="inputName" class="control-label col-md-1">Quantity</label>
+			<div class="col-md-2">
+				<input class="form-control form-control-sm" id="qty" name="qty" required>		
+			</div>			
+		</div>		
+		
+		<br>
+
+		<button type="submit" class="btn btn-primary btn-sm" id="sub-class" style="margin-right: 30px;">Add to Cart</button>
+</form>
+		
+		
+
+</div>
+
+<div class="tbl">
+<div class="container-fluid">
+	<br>
+
+	<table id="table" class="table table-sm" align="center" border="1" width="800">
+	
+		<tr class="info">
+			<th>Product ID</th>
+			<th>Product Name</th>
+			<th>Price</th>
+			<th>Quantity</th>
+			<th>Value</th>
+		</tr>
+
+	</table>
+	
+	<br>
+</div>
+</div>
+
+<div class="container-fluid" align="center" >
+	<form id="orderForm" class="form-inline " >
+	
+		
+		
+		<label for="add_no">Address no  : </label><br>
+        <input type="text" name="add_no" id="add_no" required ><br>
+		<br>
+
+        <label for="street">Street  : </label><br>
+        <input type="text" name="street" id="street" required><br>
+		<br>
+
+        <label for="city1">City 1  : </label><br>
+        <input type="text" name="city1" id="city1" required><br>
+		<br>
+		
+		<label for="zip">ZIP  : </label><br>
+        <input type="text" name="zip" id="zip" required><br>
+		<br>
+
+        <label for="city2">City 2  : </label>
+        <select name="city2" id="city2">
+		<option value="colombo">Colombo</option>
+		<option value="negombo">Negombo</option>
+		<option value="galle">Galle</option>
+		<option value="matara">Matara</option>
+		<option value="jaffna">Jaffna</option>
+		<option value="ounce">Trinco</option>
+		</select>
+		
+		<br>
+
+        
+		
+		
+		<label for="Select a route">Select a route : </label>
+		<select id="select-route" class="custom-select custom-select-sm my-1 mr-sm-2" name="select-route"></select>
+			
+		<div class="col-md-2">
+				
+		</div>		
+			
+		
+		<br>
+		<br>
+		<br>
+				
+
+			
+		
+		<button type="submit" class="btn btn-primary btn-sm" style="width: 50%;" id="sub-check" >Checkout</button>
+</form>
+
+<p id='err'></p>
+
+		
+		
+		
+
+</div>
+
+
+
+
+
+
+
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>		
+		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+		<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+		<script src="order.js" type="text/javascript"></script>
+		<script src="productorder.js" type="text/javascript"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+</body>
+</html>
